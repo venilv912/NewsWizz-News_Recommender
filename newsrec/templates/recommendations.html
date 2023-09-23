@@ -1,0 +1,21 @@
+<!-- in recommender/templates/article_link_and_recommendations.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Article and Recommendations</title>
+</head>
+<body>
+    <h1>Article and Recommendations</h1>
+    <h2>{{ article.headline }}</h2>
+    <p><a href="{% url 'recommender:redirect_to_article' article.id %}">Read Article</a></p>
+    <h3>Recommendations:</h3>
+    <ul>
+        {% for recommendation in recommendations %}
+            {% if recommendation.rowid != article.rowid %}
+            <li><a href="{% url 'recommender:article_link' recommendation.id %}?new_article_id={{recommendation.id}}">{{ recommendation.headline }}</a></li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</body>
+</html>

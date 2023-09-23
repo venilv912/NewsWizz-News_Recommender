@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Random News Recommendations</h1>
+    <ul>
+        {% for article in recommendations %}
+            <li><a href="{% url 'recommender:article_link' article.id %}">{{ article.headline }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
