@@ -10,6 +10,7 @@ import math
 import time
 from nltk.corpus import stopwords
 import nltk
+nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
 from nltk.tokenize import word_tokenize
@@ -21,7 +22,7 @@ from sklearn.metrics import pairwise_distances
 # In[2]:
 
 
-news = pd.read_json("E:/News_Recc/newsrec/recommender/latest_dataset.json", lines = True)
+news = pd.read_json("latest_dataset.json", lines = True)
 
 
 # In[3]:
