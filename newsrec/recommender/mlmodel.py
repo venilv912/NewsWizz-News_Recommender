@@ -22,7 +22,7 @@ from sklearn.metrics import pairwise_distances
 # In[2]:
 
 
-news = pd.read_json("latest_dataset.json", lines = True)
+news = pd.read_json("./latest_dataset.json", lines = True)
 
 
 # In[3]:
