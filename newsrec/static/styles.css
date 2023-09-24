@@ -1,0 +1,110 @@
+body{
+    /* background: url("https://static.vecteezy.com/system/resources/thumbnails/007/188/453/small/abstract-blur-background-with-pastel-color-free-vector.jpg"); */
+    /* background: url("https://www.creativefabrica.com/wp-content/uploads/2020/07/05/abstract-dark-blue-background-Graphics-4547097-1.jpg"); */
+    background-image: url("/static/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#first{
+    margin-top: 65px;
+    font-family: 'Croissant One', cursive;
+    color: white;
+}
+
+#subt{
+    font-family: 'Croissant One', cursive; 
+    color: white;
+}
+
+.fontch{
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: wheat;
+}
+
+a{
+    text-decoration: none;
+}
+
+span{
+    color: white;
+}
+
+.btn {
+background: transparent;
+position: relative;
+padding: 5px 15px;
+display: flex;
+align-items: center;
+font-size: 17px;
+font-weight: 600;
+text-decoration: none;
+cursor: pointer;
+border: 2px solid darkslategray;
+border-radius: 25px;
+outline: none;
+overflow: hidden;
+/* color: rgb(255,0,0); */
+color: darkslategray;
+transition: color 0.3s 0.1s ease-out;
+text-align: center;
+}
+
+.btn span {
+margin: 10px;
+}
+
+.btn::before {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+margin: auto;
+content: '';
+border-radius: 50%;
+display: block;
+width: 20em;
+height: 20em;
+left: -5em;
+text-align: center;
+transition: box-shadow 0.5s ease-out;
+z-index: -1;
+}
+
+.btn:hover {
+color: #fff;
+border: 1px solid darkslategray;
+}
+
+.btn:hover::before {
+box-shadow: inset 0 0 0 10em darkslategray;
+}
+
+.setit{
+    height: 160px;
+}
+
+.container{
+    margin-bottom: 100px;
+}
+
+
+.artbut{
+    background-color: #BFE1EA;
+    margin-bottom: 0px;
+}
+
+.artbut:hover{
+    background-color: #E9D2EF;
+    color: black;
+}
+
+.card-text{
+    font-family: 'Sen', sans-serif;
+    font-size: 1.10em;
+}
+
+.card{
+    border-radius: 30px;
+}
